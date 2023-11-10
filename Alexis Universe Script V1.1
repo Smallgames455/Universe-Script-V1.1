@@ -1,0 +1,52 @@
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+local window = PabloLib:Create("Alexis Universe Scrpits")
+
+--Tabs--
+
+local tab1 = window:CreateTab("Commands")
+
+--Buttons--
+
+tab1:CreateButton("Infinite Yield", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+local tab1 = window:CreateTab("Blade Ball")
+
+tab1:CreateButton("Auto Parry", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry",true))()
+end)
+
+tab1:CreateButton("Neva Hub", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
+end)
+
+local tab1 = window:CreateTab("Break In 2")
+
+tab1:CreateButton("Breaking Blitz", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"))()
+end)
+
+local tab1 = window:CreateTab("Close")
+
+tab1:CreateButton("Close Alexis Hub", function()
+PabloLib:Close()
+end)
+
+local tab1 = window:CreateTab("More")
+
+tab1:CreateTextbox("Change Speed", function(a)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+print(a)
+end)
+
+tab1:CreateTextbox("Change your JumpPower", function(a)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
+print(a)
+end)
+
+tab1:CreateWarning("Warning")
+
+tab1:CreateLabel("This Scrpit Works In Arceus X And Delta.")
+
+tab1:CreateLabel("This is Alexis Hub Discord Server https://discord.com/invite/fEfxrZDnmE.")
